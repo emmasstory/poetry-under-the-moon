@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poetry Under The Moon</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            color: #C0C0C0; /* Silver text color */
+            background-color: #000; /* Black base color */
+            background-image: url('https://www.dropbox.com/scl/fi/9spdyq1b64187wmy7r60p/mesiac.png?rlkey=c5emn1dh2rw713jw39dupx63u&raw=1');
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto; /* Enable scrolling */
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            color: #C0C0C0; /* Silver text color */
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); /* White glow */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header h2 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #A9A9A9; /* Darker silver for subtitle */
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.1); /* Light transparent white */
+            backdrop-filter: blur(5px); /* Slight blur for the nav bar */
+        }
+        nav a {
+            padding: 15px 20px;
+            color: #C0C0C0;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #fff; /* Change to white on hover */
+        }
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.7); /* Black with opacity */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Subtle silver shadow */
+            backdrop-filter: blur(5px); /* Blur for container background */
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #C0C0C0; /* Silver border for section titles */
+            padding-bottom: 10px;
+            color: #C0C0C0;
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); /* White glow */
+        }
+        .poetry {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .poetry-item {
+            background-color: rgba(255, 255, 255, 0.1); /* Light transparent silver background */
+            border: 1px solid #C0C0C0;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            color: #C0C0C0;
+            text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3); /* Subtle white shadow */
+        }
+        .contact a {
+            display: block;
+            color: #C0C0C0;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+        .contact a:hover {
+            color: #fff; /* White on hover */
+        }
+        .profile-pics {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .profile-pics img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin: 0 10px;
+            border: 2px solid #C0C0C0; /* Silver border for profile pictures */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Silver glow */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            color: #C0C0C0;
+            font-size: 0.9em;
+            background-color: rgba(0, 0, 0, 0.7); /* Match container color */
+            border-top: 1px solid #C0C0C0;
+            box-shadow: 0 -5px 15px rgba(255, 255, 255, 0.2); /* Shadow at the top of footer */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Poetry Under The Moon</h1>
+        <h2>by Ash & Emma</h2>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#poetry">Poetry</a>
+        <a href="#collaborations">Collaborations</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="home" class="section">
+            <h2>Home</h2>
+            <p>Welcome to our poetry website! We are Emma and Ash, passionate poets sharing our creative works with you. Explore our poems and get to know more about us through our contact details. Thank you for visiting!</p>
+            <div class="profile-pics">
+                <img src="emma-profile.jpg" alt="Emma's profile picture">
+                <img src="ash-profile.jpg" alt="Ash's profile picture">
+            </div>
+        </section>
+        <section id="poetry" class="section">
+            <h2>Poetry</h2>
+            <div class="poetry">
+                <div class="poetry-item">
+                    <h3>Poem by Emma</h3>
+                    <p>Here is a sample poem by Emma. Add your poem text and include personal thoughts or interpretations.</p>
+                </div>
+                <div class="poetry-item">
+                    <h3>Poem by Ash</h3>
+                    <p>Here is a sample poem by Ash. Add your poem text and include personal thoughts or interpretations.</p>
+                </div>
+            </div>
+        </section>
+        <section id="collaborations" class="section">
+            <h2>Collaborations</h2>
+            <div class="poetry">
+                <div class="poetry-item">
+                    <h3>Emma & Ash</h3>
+                    <p>This section features poems created collaboratively by Emma and Ash. Add collaborative works here.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>If you would like to get in touch with us, here are our contact details:</p>
+            <div class="contact">
+                <p><strong>Emma:</strong></p>
+                <a href="mailto:emmasstoryofficial@gmail.com">emmasstoryofficial@gmail.com</a>
+                <p><strong>Instagram:</strong></p>
+                <a href="https://www.instagram.com/emmasstory_">instagram.com/emmasstory_</a>
+
+                <p><strong>Ash:</strong></p>
+                <a href="mailto:mr.moon.58.poems@gmail.com">mr.moon.58.poems@gmail.com</a>
+                <p><strong>Instagram:</strong></p>
+                <a href="https://www.instagram.com/_mr._moon_58">instagram.com/_mr._moon_58</a>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>© 2024 Poetry Under The Moon. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
